@@ -22,10 +22,10 @@ return [
     ],
 
     'ignore_routes' => [
-        'platform.systems.relation',
+        // 
     ],
 
     'allowed_methods' => [
-        'POST',
+        //
     ],
 ];
