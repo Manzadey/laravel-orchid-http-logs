@@ -22,7 +22,7 @@ return [
     ],
 
     'ignore_routes' => [
-        // 
+        //
     ],
 
     'allowed_methods' => [
