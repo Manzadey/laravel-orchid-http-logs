@@ -23,6 +23,6 @@ Route::prefix('http-logs')
             ->name('show')
             ->breadcrumbs(static fn(Trail $trail, HttpLog $httpLog) : Trail => $trail
                 ->parent(HttpLogService::ROUTE_LIST)
-                ->push($httpLog->path, route(HttpLogService::ROUTE_SHOW, $httpLog->name))
+                ->push($httpLog->getAttribute('path'), route(HttpLogService::ROUTE_SHOW, $httpLog))
             );
     });
