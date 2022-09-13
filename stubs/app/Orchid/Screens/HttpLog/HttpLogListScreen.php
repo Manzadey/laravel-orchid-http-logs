@@ -87,9 +87,10 @@ class HttpLogListScreen extends AbstractScreen
                 TD::make('path', __('Путь')),
                 TD::make('ip'),
                 CreatedAtTD::make(),
-                ActionsTD::make(static fn(HttpLog $httpLog) : DropDown => DropdownOptions::make()->list([
-                    ShowLink::route('platform.http-logs.show', $httpLog),
-                ])),
+                ActionsTD::make(static fn(HttpLog $httpLog) : DropDown => DropdownOptions::make()
+                    ->list([
+                        ShowLink::route('platform.http-logs.show', $httpLog),
+                    ])),
             ]),
         ];
     }
