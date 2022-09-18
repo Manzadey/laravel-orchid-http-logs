@@ -16,7 +16,7 @@ Route::prefix('http-logs')
             ->name('list')
             ->breadcrumbs(static fn(Trail $trail) : Trail => $trail
                 ->parent('platform.index')
-                ->push(HttpLogService::NAME, route(HttpLogService::ROUTE_LIST))
+                ->push(HttpLogService::TITLE, route(HttpLogService::ROUTE_LIST))
             );
 
         Route::screen('{httpLog}', HttpLogShowScreen::class)

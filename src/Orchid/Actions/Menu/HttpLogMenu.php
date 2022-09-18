@@ -12,7 +12,7 @@ class HttpLogMenu
 {
     public static function make() : Menu
     {
-        return Menu::make(HttpLogService::NAME)
+        return Menu::make(HttpLogService::TITLE)
             ->route(HttpLogService::ROUTE_LIST)
             ->icon(HttpLogService::ICON)
             ->can('list', HttpLog::class);

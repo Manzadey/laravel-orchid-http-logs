@@ -12,7 +12,7 @@ class HttpLogLink
 {
     public static function make() : Link
     {
-        return Link::make(HttpLogService::NAME)
+        return Link::make(HttpLogService::TITLE)
             ->route(HttpLogService::ROUTE_LIST)
             ->icon(HttpLogService::ICON)
             ->can('list', HttpLog::class);

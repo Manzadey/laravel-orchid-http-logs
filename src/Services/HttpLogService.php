@@ -6,7 +6,7 @@ namespace Manzadey\OrchidHttpLog\Services;
 
 class HttpLogService
 {
-    public const NAME = 'HTTP логи';
+    public const TITLE      = 'HTTP логи';
 
     public const PLURAL     = 'http-logs';
 
