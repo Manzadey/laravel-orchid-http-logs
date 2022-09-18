@@ -10,7 +10,7 @@ class HttpLogService
 
     public const PLURAL     = 'http-logs';
 
-    public const ROUTE      = 'http-logs.' . self::PLURAL . '.';
+    public const ROUTE      = 'platform.' . self::PLURAL . '.';
 
     public const ROUTE_LIST = self::ROUTE . 'list';
 
