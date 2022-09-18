@@ -8,9 +8,13 @@ class HttpLogService
 {
     public const NAME = 'HTTP логи';
 
-    public const ROUTE_LIST = 'platform.http-logs.list';
+    public const PLURAL     = 'http-logs';
 
-    public const ROUTE_SHOW = 'platform.http-logs.show';
+    public const ROUTE      = 'http-logs.' . self::PLURAL . '.';
 
-    public const ICON = 'task';
+    public const ROUTE_LIST = self::ROUTE . 'list';
+
+    public const ROUTE_SHOW = self::ROUTE . 'show';
+
+    public const ICON       = 'task';
 }
